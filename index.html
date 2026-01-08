@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gardener Game</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/circle.partial.css">
+    <script src="https://unpkg.com/htmx.org@1.9.10"
+        integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="app-layout">
+        <div class="game-wrapper">
+            <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="html/circle.partial.html"></div>
+        </div>
+        <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="html/sidebar.partial.html"></div>
+    </div>
+    <script src="js/circle.partial.js"></script>
+</body>
+
+</html>
